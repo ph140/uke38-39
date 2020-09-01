@@ -10,8 +10,8 @@ def omkrets(r):
 
 
 def areal(r):
-    a = math.pi * r**2  # beregner arealeet
-    a = round(a, 2)  # avrunder til 2 desimal
+    a = math.pi * r**2  # beregner arealet
+    a = round(a, 2)  # avrunder til 2 desimaler
     return a
 
 
