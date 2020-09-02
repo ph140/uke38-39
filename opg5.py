@@ -1,10 +1,12 @@
-x = int(input("Tall: "))
+tall = int(input("Tall: "))  # Tar inn input
 
 
-for i in range(2, x):
-    if x % i == 0:
+for i in range(2, tall):
+    # Itererer gjennom alle tallene fra 2 til "tall"
+    # og sjekker om "tall" er delelig på noen av de.
+    if tall % i == 0:
         print("Ikke primtall")
         break
-    elif x == i+1:
+    elif tall == i+1:
         print("Primtall")
         break
