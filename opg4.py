@@ -1,20 +1,15 @@
-x = int(input("Tall: "))
-original = x
-minliste = []
+tall = int(input("tall: "))  # Input fra bruker
+faktorliste = []  # Definerer listen som skal lagre faktorene
 
 
-while x > 1:
-    x = int(x)
-    for i in range(2, x+1):
-        if x % i == 0:
-            x = int(x/i)
-            minliste.append(int(i))
-            break
-        elif x/i == 1:
+while tall > 1:
+    for i in range(2, tall+1):  # Itererer gjennom tallene fra 2 til tall
+        if tall % i == 0:
+            # Legger til "i" i faktorliste dersom det er en faktor
+            # og endrer verdien til tall for å sjekke neste faktor
+            tall = int(tall/i)
+            faktorliste.append(int(i))
             break
 
-
-print(minliste)
-
-if minliste[0] == original:
-    print("Primatall")
+# printer ut listen til slutt
+print(faktorliste)
