@@ -1,6 +1,10 @@
 tall = int(input("tall: "))  # Input fra bruker
 faktorliste = []  # Definerer listen som skal lagre faktorene
 
+if tall < 0:
+    tall = abs(tall)
+    faktorliste.append(-1)
+
 
 while tall > 1:
     for i in range(2, tall+1):  # Itererer gjennom tallene fra 2 til tall
