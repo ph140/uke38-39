@@ -5,7 +5,8 @@ if tall == 1 or tall == 2:
 
 
 for i in range(2, tall):
-    # Itererer gjennom alle tallene fra 2 til "tall"
+    print(i)
+    # Begynner å iterere gjennom tallene fra 2 til "tall"
     # og sjekker om "tall" er delelig på noen av de.
     if tall % i == 0:
         print("Ikke primtall")
