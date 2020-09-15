@@ -15,6 +15,6 @@ while tall > 1:
             faktorliste.append(int(i))
             break
 
-# printer ut listen til slutt
+# Reverserer listen og printer den ut
 faktorliste = faktorliste[::-1]
 print(faktorliste)
