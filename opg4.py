@@ -1,4 +1,4 @@
-tall = int(input("tall: "))  # Input fra bruker
+tall = int(input("tall:\n"))  # Input fra bruker
 faktorliste = []  # Definerer listen som skal lagre faktorene
 
 if tall < 0:
@@ -16,4 +16,5 @@ while tall > 1:
             break
 
 # printer ut listen til slutt
+faktorliste = faktorliste[::-1]
 print(faktorliste)
