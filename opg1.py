@@ -4,21 +4,21 @@ radius = float(input("Radius: "))
 
 
 def omkrets(r):
-    o = 2*math.pi*r  # beregner omkretsen
-    o = round(o, 2)  # avrunder til to desimaler
-    return o
+    omkrets = 2*math.pi*r  # beregner omkretsen
+    omkrets = round(o, 2)  # avrunder til to desimaler
+    return omkrets
 
 
 def areal(r):
-    a = math.pi * r**2  # beregner arealet
-    a = round(a, 2)  # avrunder til 2 desimaler
-    return a
+    areal = math.pi * r**2  # beregner arealet
+    areal = round(a, 2)  # avrunder til 2 desimaler
+    return areal
 
 
 def volum(r):
-    v = (4*math.pi*r**3)/3  # beregner volumet
-    v = round(v, 2)  # avrunder til to desimaler
-    return v
+    volum = (4*math.pi*r**3)/3  # beregner volumet
+    volum = round(v, 2)  # avrunder til to desimaler
+    return volum
 
 
 def skrivut(radius):
