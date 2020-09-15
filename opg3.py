@@ -1,7 +1,7 @@
 # Tar inn tre tall fra brukeren
-a = abs(int(input("Tall1: ")))
-b = abs(float(input("Tall2: ")))
-c = abs(float(input("Tall3: ")))
+a = float(input("Tall1:\n"))
+b = float(input("Tall2:\n"))
+c = float(input("Tall3:\n"))
 
 
 def triple(a, b, c):
@@ -23,6 +23,6 @@ def triple(a, b, c):
 
 # Skriver ut resultatet basert på svaret fra funksjonen
 if triple(a, b, c) == True:
-    print("Det er riktig")
+    print("Tallene er pytagoriske tripler")
 else:
-    print("Det stemmer ikke")
+    print("Tallene er ikke pytagoriske tripler")
