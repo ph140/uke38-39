@@ -1,6 +1,6 @@
 tall = int(input("Tall: "))  # Tar inn input
 
-if tall == 2:
+if tall == 1 or tall == 2:
     print("Primtall")
 
 
@@ -10,6 +10,7 @@ for i in range(2, tall):
     if tall % i == 0:
         print("Ikke primtall")
         break
-    elif tall == i+1:
+    # Bryter ut av loopen dersom den har gått gjennom alle mulige faktorene
+    elif i > tall/i:
         print("Primtall")
         break
