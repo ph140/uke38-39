@@ -1,6 +1,6 @@
 tall = int(input("Tall: "))  # Tar inn input
 
-if tall == 1 or tall == 2:
+if tall == 2:
     print("Primtall")
 
 
